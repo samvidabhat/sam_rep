@@ -1,0 +1,69 @@
+<style>
+    div{
+        background-color:darkred;
+    }
+    </style>
+<h1 style="color: brown; margin-left: 350px"> Product Bill</h1>
+<script src="prodjs.js"></script>
+        
+    <body style="margin-left:300px;margin-right:200px; background-color:honeydew" class="b1">   
+                <label style="align-self:auto; margin-left: 350px">Product Name: <select name="Product" onchange="Pricecalc(this.value)" >
+               <option></option>
+                <option name="product" value="0">Samsung</option>
+                <option name="product" value="1">Apple</option>
+                
+                <option name="product" value="2">Lenovo</option>
+                <option name="product" value="3">redmi</option>
+              </select>
+            <br>
+            <br>
+
+            <label style="margin-left: 330px">  Price:       <input type="text" id="productPrice">
+            
+<br>
+<br>
+<img id="1" style="margin-left:320px;"><br>
+
+<fieldset style="display: block; color: Black; margin-right:390px; margin-left:325px;">
+<legend>Quantity:</legend>
+<input type="radio" name="qty" value="One" onclick="qty(this.value)">One
+<input type="radio" name="qty" value="Two" onclick="qty(this.value)">Two
+<input type="radio" name="qty" value="Three" onclick="qty(this.value)">Three
+</fieldset>
+<br><br>
+<fieldset style="margin-right:390px; margin-left:325px;">
+    <legend>Payment methods: </legend>
+<input type="radio" name="pay" value="Cash" onclick="meth(this.value)">cash
+<input type="radio" name="pay" value="Card" onclick="meth(this.value)">Card
+<input type="radio" name="pay" value="Paytm" onclick="meth(this.value)">Paytm
+</fieldset>
+<br><br>
+<fieldset style="margin-right:390px; margin-left:325px;">
+    <legend>
+Payment Charges
+    </legend>
+
+<input type="text" id="charge"><br><br>
+</fieldset>
+<br>
+<br>
+<fieldset style="margin-right:390px; margin-left:325px;">
+<input type="checkbox" id="chk" onclick="val()">Door Delivery Charges
+
+<br>
+<span id="span1"></span><br>
+<input type="text" id="ch1">
+<br>
+</fieldset>
+<br>
+<hr>
+
+
+
+<input style="margin-right:500px; margin-left:400px; background-color:cornflowerblue" type="button" value="Submit" onclick="display();">
+<br><br>
+<pre>
+                                            <textarea name="summary" id="tx" cols="45" rows="10"></textarea>
+</pre>
+
+    </body>
